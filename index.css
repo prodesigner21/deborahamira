@@ -1,0 +1,312 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background: #9681f2;
+    padding: 30px 10px;
+    transition: .3s;
+}
+
+.navlist{
+    display: flex;
+}
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+.navlist a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 10px 27px;
+    text-decoration: none;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    bottom: -3px;
+    left: 0%;
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+
+
+
+
+/* Let's style now lol */
+
+
+
+
+
+
+.head{
+    background-color: #9681f2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    padding-top: 20%;
+}
+.head h5{
+    letter-spacing: 1px;
+    margin-top: 0%;
+    color: whitesmoke;
+    font-size: 12.8px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.head h1{
+    margin-bottom: 0%;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    padding-bottom: 1%;
+}
+.head i{
+    margin-top: 10%;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.projects{
+    grid-template-columns: repeat(2,2fr);
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+.projects a{
+    text-align: center;
+    text-decoration: none;
+}
+.projects a:hover{
+    color: white;
+}
+.projects p{
+    text-align: justify;
+    margin-left: 16px;
+    margin-right: 16px;
+    letter-spacing: 1px;   
+}
+.projects h2{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 3%;
+}
+.business{
+    padding: 6px 50px;
+}
+.avedok, .gentlemen, .meechu{
+    padding: 6px 50px;
+  
+}
+.business a{
+    text-align: center;
+    text-decoration: none;
+}
+.btn{
+    border-radius: 8px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    padding:12px 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 2%;
+    background-color: orangered;
+    margin-left: 40%;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: black;
+    border: 2px solid;
+}
+
+
+
+
+
+
+
+
+
+.business, .avedok, .gentlemen, .meechu{
+    margin-bottom: 25px;
+}
+.business{
+    background-color: whitesmoke;
+    border: blue 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.avedok{
+    background-color: whitesmoke;
+    border: blue 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.gentlemen{
+    background-color: whitesmoke;
+    border: blue 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.meechu{
+    background-color: whitesmoke;
+    border: blue 1px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+.contact{
+    background: #8067f0eb;
+    width: 64%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background-image: url(./intro.png);
+    background-size: cover;
+}
+.center h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: white;
+}
+.center p{
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.contact .action form input[type="email"]{
+    max-width: 100%;
+    width: 470px;
+    padding: 12px 15px;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+}   
+.contact .action form input[type="submit"]{
+    padding: 12px 40px;
+    background: orangered;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 30px;
+    cursor: pointer;
+}   
+
+
+.ends{
+    text-align: center;
+    padding: 40px;
+}
+.ends p{
+    font-size: var(--p-font);
+    letter-spacing: 1px;
+}
+.mail{
+    display: inline-block;
+    color: white;
+    background: orangered;
+    font-size: 15px;
+    padding: 10px 40px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: ease .40s;
+    text-decoration: none;
+}
+.mail:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 970px) {
+    .center{
+        align-items: center;
+        text-align: center;
+    }
+    .center h3{
+        font-size: 24px;
+    }
+    .center p{
+        font-size: 12px;
+    }
+    .contact{
+        width: auto;
+    }
+}
+
+
+/* Responsiveness for mobile */
+
+@media (min-width: 1200px) {
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+    .btn{
+        margin-left: 0%;
+    }
+}
+@media (min-width: 970px) {
+    .projects{
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .btn{
+        margin-left: 0%;
+    }
+}
+@media (max-width: 700px) {
+    .projects{
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .btn{
+        margin-left: 0%;
+    }
+}
+@media (max-width: 500px) {
+    .projects{
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .btn{
+        margin-left: 0%;
+    }
+}
+@media (max-width: 400px) {
+    .projects{
+        grid-template-columns: auto;
+        display: grid;
+    }
+    .btn{
+        margin-left: 0%;
+    }
+}
+
+

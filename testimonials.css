@@ -1,0 +1,179 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background: #9681f2;
+    padding: 30px 10px;
+    transition: .3s;
+}
+
+.navlist{
+    display: flex;
+}
+.navlist li{
+    position: relative;
+    list-style: none;
+}
+.navlist a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 10px 27px;
+    text-decoration: none;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    bottom: -3px;
+    left: 0%;
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+
+
+
+.head{
+    background-color: #9681f2;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    padding-top: 30%;
+}
+.head h5{
+    letter-spacing: 1px;
+    margin-top: 0%;
+    color: whitesmoke;
+    font-size: 12.8px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.head h1{
+    margin-bottom: 0%;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+    padding-bottom: 1%;
+}
+.head i{
+    margin-top: 10%;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.test i{
+    color: gold;
+}
+.test{
+    background: whitesmoke;
+    padding: 15px 15px 15px 15px;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    text-align: justify;
+}
+.social i{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .testimonial{
+        grid-template-columns: auto;
+        display: grid;
+        grid-gap: 3rem;
+    }
+    .contact{
+        grid-template-columns: 30% 30% 30%;
+        display: grid;
+        grid-gap: 3rem;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .testimonial{
+        grid-template-columns: auto;
+        display: grid;
+        grid-gap: 3rem;
+    }
+    .contact{
+        grid-template-columns: 30% 30% 30%;
+        display: grid;
+        grid-gap: 3rem;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .testimonial{
+        grid-template-columns: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 3rem;
+    }
+    .contact{
+        grid-template-columns: 30% 30% 30%;
+        display: grid;
+        grid-gap: 3rem;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .testimonial{
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 3rem;
+    }
+    .contact{
+        grid-template-columns: 30% 30% 30%;
+        display: grid;
+        grid-gap: 3rem;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .testimonial{
+        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 3rem;
+    }
+    .contact{
+        grid-template-columns: 30% 30% 30%;
+        display: grid;
+        grid-gap: 3rem;
+    }
+}
