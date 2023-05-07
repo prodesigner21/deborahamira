@@ -41,12 +41,8 @@ The website was built using the following technologies:
 
 ## Authors
 
-This website was created by [Your Name], a web developer and designer with experience in creating portfolio websites for clients.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This website was created by Peter AJOSE, a web developer and designer with experience in creating portfolio websites for clients.
 
 ## Acknowledgments
 
-Thanks to [Your mentor/professor/colleagues], [Your friends/family], and [Any other resources you used or people who helped you] for their support and feedback during the creation of this project.
+Thanks to Deborah and Victor for their support and feedback during the creation of this project.
